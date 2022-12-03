@@ -14,7 +14,7 @@ fn h(l:f64, c:f64)-> Array2<f64> {
     ]
 }
 
-fn dh1(l:f64, c:f64)-> Array2<f64> {
+fn dh1(_l:f64, _c:f64)-> Array2<f64> {
     let fr: f64 = -1./(2.*f64::sqrt(3.));
     array![
         [-1./4. , 0.     ,fr      ,0.    ],
@@ -23,7 +23,7 @@ fn dh1(l:f64, c:f64)-> Array2<f64> {
         [0.     ,fr      ,0.      ,-1./4.]
     ]
 }
-fn dh2(l:f64, c:f64)-> Array2<f64> {
+fn dh2(_l:f64, c:f64)-> Array2<f64> {
     let fr: f64 = -1./(2.*f64::sqrt(3.));
     array![
         [0.     , fr      ,0.       ,0.    ],
