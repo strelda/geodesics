@@ -1,0 +1,12 @@
+[package]
+name = "diabolic_points"
+version = "0.1.0"
+edition = "2021"
+description = "Finding diabolic points of their Hermitian matrix energy spectrum."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+approx = "0.5.1"
+ndarray = "0.14"
+ndarray-linalg = { version = "0.13", features = ["openblas-static"] }
