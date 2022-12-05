@@ -92,7 +92,7 @@ fn gamma(l: f64, c: f64) -> Array2<f64>{
     let g_dl: Array2<f64> = g_dl(l,c); 
     let g_dc: Array2<f64> = g_dc(l,c);
     let g_inv_2: Array2<f64> = 0.5*inverse2x2(&g(l,c)); 
-    
+    //make it matrix multiplication
     let g11 = g_inv_2[[0,0]] * (2.*g_dl[[0,0]] - g_dl[[0,0]]) 
                 +  g_inv_2[[0,1]] * (2.*g_dl[[0,1]] - g_dc[[0,0]]);
     let g12 = g_inv_2[[0,0]] * (g_dc[[0,0]]) 
